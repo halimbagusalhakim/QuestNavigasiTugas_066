@@ -7,4 +7,8 @@
     <string name="formisian">Form Isian</string>
     <string name="selamat_datang">Selamat Datang</string>
     <string name="FormulirPendaftaran">Formulir Pendaftaran</string>
+    <string name="submit">Submit</string>
+    <string name="back">Formulir Pendaftaran</string>
+    <string name="home">home</string>
+    <string name="nama_lengkap">Halim Bagus Al Hakim</string>
 </resources>
