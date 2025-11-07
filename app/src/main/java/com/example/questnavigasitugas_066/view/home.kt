@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.questnavigasitugas_066.R
@@ -47,6 +48,17 @@ fun home(
                 contentDescription = null,
                 modifier = Modifier.size(500.dp)
             )
+            Column(modifier= Modifier,horizontalAlignment = Alignment.CenterHorizontally,
+            ){
+                Text(text = stringResource(R.string.nama_lengkap),
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 20.sp
+                )
+                Text(text = stringResource(R.string.NIM),
+                    textAlign = TextAlign.Center,
+                    fontSize = 15.sp
+                )
+            }
 
         }
     }
