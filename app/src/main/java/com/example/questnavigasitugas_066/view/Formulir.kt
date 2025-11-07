@@ -13,6 +13,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -133,10 +135,42 @@ fun FormulirPendaftaran(
                             }
                         }
                     }
+                    Spacer(modifier = Modifier.height(paddingMedium))
+
+                    Text("ALAMAT", fontWeight = FontWeight.Bold)
+                    OutlinedTextField(
+                        value = alamat,
+                        onValueChange = { alamat = it },
+                        placeholder = { Text("Alamat lengkap") },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = paddingSmall)
+                    )
+                    Spacer(modifier = Modifier.height(paddingLarge))
+
+                    Button(
+                        onClick = onSubmitButtonClick,
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF8A2BE2)),
+                        shape = RoundedCornerShape(50),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(buttonHeight)
+                    ) {
+                        Text(stringResource(R.string.submit), color = Color.White, fontWeight = FontWeight.Bold)
+                    }
 
 
+                }
+
+            }
 
         }
     }
+
 }
+
+
+
+
+
 
