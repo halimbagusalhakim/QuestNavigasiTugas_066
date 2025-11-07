@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">QuestNavigasiTugas_066</string>
+    <string name= "NIM">20230140066</string>
+    <string name="jenis_kelamin">JENIS KELAMIN</string>
+    <string name="alamat">ALAMAT</string>
+    <string name="tampil">Tampilan Data</string>
+    <string name="formisian">Form Isian</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="FormulirPendaftaran">Formulir Pendaftaran</string>
 </resources>
